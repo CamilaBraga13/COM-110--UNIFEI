@@ -80,7 +80,7 @@
              goto inicio_menu;
            }
 
-				printf("\n¡REA: %d", area);
+				printf("\n√ÅREA: %d", area);
 				printf("\nPERIMETRO: %d\n\n", perim);
 
 				for(j = 0; j < lado + 2; j++){
@@ -133,20 +133,20 @@
             area=base*altura;
             perim=(2*base)+(2*altura);
 
-            printf("\n¡REA: %d", area);
+            printf("\n√ÅREA: %d", area);
 			printf("\nPERIMETRO: %d\n\n", perim);
 
-			for(j=0 ; j<base+2; j++){
+			for(j=0 ; j<base+1; j++){
           printf(" _");
 			}
 
 			printf("\n");
 
 			for(i=0 ; i<altura ; i++){
-         for(j=0 ; j<=base+2 ; j++){
+         for(j=0 ; j<=base+1 ; j++){
            if(j == 0){
 						printf("| ");
-					} else if(j == base + 2) {
+					} else if(j == base + 1) {
 						printf("| ");
 					} else {
 						printf("@ ");
@@ -155,13 +155,13 @@
                 }printf("\n");
 			}
 			if(i == altura) {
-					for(j = 0; j < base + 2; j++){
+					for(j = 0; j < base + 1; j++){
 						printf(" _");
 					}
 				}
 
 			 else if (base <= 0) {
-				printf("Valor inv·lido!\n");
+				printf("Valor inv√°lido!\n");
 			}
 
 			j = 0; //Reseta as variaveis
@@ -188,7 +188,7 @@
            area=(baseT*baseT)/2;
            perim=base*3;
 
-           printf("\n¡REA: %.f", area);
+           printf("\n√ÅREA: %.f", area);
            printf("\nPERIMETRO: %d\n\n", perim);
            printf("\n");
 
@@ -265,7 +265,7 @@
            area = (baseT*baseT)/2;
            perim = baseT+baseT+hip;
 
-           printf("\n¡REA: %.f", area);
+           printf("\n√ÅREA: %.f", area);
            printf("\nPERIMETRO: %d\n\n", perim);
            printf("\n");
 
@@ -325,7 +325,7 @@
            scanf("%d",&diag);
 
            if(diag<2){
-                printf("\nVALOR INV¡LIDO !!!\n\n");
+                printf("\nVALOR INV√ÅLIDO !!!\n\n");
             goto inicio_menu;
            }
 
@@ -341,7 +341,7 @@
            areaL=(diagL*diagL)/2;
            perimL=4*ladoL;
 
-           printf("\n¡REA: %.2f", areaL);
+           printf("\n√ÅREA: %.2f", areaL);
            printf("\nPERIMETRO: %.2f\n\n", perimL);
            printf("\n");
 
